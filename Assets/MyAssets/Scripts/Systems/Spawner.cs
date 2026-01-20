@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
         while (i < maxamountToSpawn || infiniteInt)
         {
 
-            GameObject clone = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+            GameObject clone = BasicPuller.instance.Instantiate(objectToSpawn);
             
             clone.name = clone.name + "_clone" + i;
             RandomizeTransforms(clone.transform);

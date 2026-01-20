@@ -10,7 +10,7 @@ public class CubeLife : MonoBehaviour
 
     void DestroyMyself()
     {
-        Destroy(gameObject);
+        BasicPuller.instance.Destroy(gameObject);
     }
 
     

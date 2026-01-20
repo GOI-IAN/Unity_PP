@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   objectToSpawn: {fileID: 8375485600988184914, guid: bd9ae9ccdd8a1534b8384a6ce0fb2a80, type: 3}
-  waitTime: 0
+  waitTime: 1
   maxamountToSpawn: 0
 --- !u!4 &342579250
 Transform:
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1064449334}
   - component: {fileID: 1064449333}
   m_Layer: 0
-  m_Name: --ObjectPuller--
+  m_Name: --ObjectPooler--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,6 +195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae1722f4fd00804a9233e0011c23bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicPuller
+  prefabFallback: {fileID: 8375485600988184914, guid: bd9ae9ccdd8a1534b8384a6ce0fb2a80, type: 3}
+  activeList: []
+  inActiveList: []
 --- !u!4 &1064449334
 Transform:
   m_ObjectHideFlags: 0
